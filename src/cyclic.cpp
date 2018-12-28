@@ -60,7 +60,7 @@ void doHousekeeping() {
   ESP_LOGI(TAG, "BME680 Temp: %.2f°C | IAQ: %.2f", bme_status.temperature, bme_status.iaq);
 #endif
 
-  // check free heap memory
+// check free heap memory
   if (ESP.getMinFreeHeap() <= MEM_LOW) {
     ESP_LOGI(TAG,
              "Memory full, counter cleared (heap low water mark = %d Bytes / "
